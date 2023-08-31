@@ -4,6 +4,17 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 
+# Create symlinks for /opt to fix 1Password
+echo "-- Creating symlinks to fix packages that install to /opt --"
+# Create symlink for /opt to /var/opt since it is not created in the image yet
+mkdir -p "/var/opt"
+ln -s "/var/opt"  "/opt"
+# Create symlink for 1Password
+mkdir -p "/usr/lib/opt/1Password"
+ln -s "../../usr/lib/opt/1Password" "/var/opt/1Password"
+echo "Created symlinks for 1Password"
+echo "---"
+
 INCLUDED_PACKAGES=($(jq -r "[(.all.include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[]), \
                              (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
                              | sort | unique[]" /tmp/packages.json))
