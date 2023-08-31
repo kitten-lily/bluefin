@@ -19,7 +19,9 @@ RUN rm -f /etc/yum.repos.d/_copr_kylegospo-gnome-vrr.repo
 
 ADD packages.json /tmp/packages.json
 ADD build.sh /tmp/build.sh
-ADD optfixes.sh /tmp/optfixes.sh
+COPY optfixes.sh /tmp/optfixes.sh
+
+RUN /tmp/optfixes.sh
 
 RUN /tmp/build.sh && \
     pip install --prefix=/usr yafti && \
