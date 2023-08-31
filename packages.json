@@ -2,11 +2,12 @@
     "all": {
         "include": {
             "all": [
-	        "cockpit-bridge",
-		"ddccontrol", 
-		"ddccontrol-db", 
-		"ddccontrol-gtk",
-		"fish",
+                "1password",
+                "cockpit-bridge",
+                "ddccontrol",
+                "ddccontrol-db",
+                "ddccontrol-gtk",
+                "fish",
                 "gnome-shell-extension-appindicator",
                 "gnome-shell-extension-dash-to-dock",
                 "gnome-shell-extension-blur-my-shell",
@@ -15,25 +16,25 @@
                 "libgda",
                 "libgda-sqlite",
                 "libratbag-ratbagd",
-		"nautilus-gsconnect",
-		"pulseaudio-utils",
+                "nautilus-gsconnect",
+                "pulseaudio-utils",
                 "python3-pip",
-		"samba",
-		"samba-ldb-ldap-modules", 
-		"samba-dcerpc",
-		"samba-winbind-clients",
-		"samba-winbind-modules",
+                "samba",
+                "samba-ldb-ldap-modules",
+                "samba-dcerpc",
+                "samba-winbind-clients",
+                "samba-winbind-modules",
                 "tailscale",
-		"tmux",
+                "tmux",
                 "wireguard-tools",
                 "xprop",
                 "yaru-theme",
-		"zsh"
+                "zsh"
             ]
         },
         "exclude": {
             "all": [
-	        "gnome-software-rpm-ostree", 
+                "gnome-software-rpm-ostree",
                 "gnome-tour"
             ]
         }
@@ -44,8 +45,8 @@
         },
         "exclude": {
             "all": [
-	        "podman-docker"
-	    ]
+                "podman-docker"
+            ]
         }
     }
 }
