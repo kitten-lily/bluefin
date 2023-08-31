@@ -37,7 +37,10 @@
                 "gnome-software-rpm-ostree",
                 "gnome-tour"
             ]
-        }
+        },
+        "optfix": [
+            "1Password"
+        ]
     },
     "38": {
         "include": {
