@@ -11,7 +11,7 @@ TimeoutStartSec=900
 ExecStartPre=/bin/systemctl --user enable podman.socket
 
 [Container]
-Image=ghcr.io/ublue-os/ubuntu-toolbox:latest
+Image=ghcr.io/ashylily/ubuntu-toolbox:latest
 ContainerName=podmansh
 RemapUsers=keep-id
 RunInit=yes
