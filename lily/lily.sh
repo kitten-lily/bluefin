@@ -2,4 +2,4 @@
 
 set -oue pipefail
 
-./en_se.sh
+/tmp/lily/en_se.sh
