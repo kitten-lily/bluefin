@@ -183,7 +183,7 @@ function Build_container(){
     elif test "$2" = "Distrobox"; then
         echo "${blue}Building container using a Distrobox${normal}"
         echo ""
-        distrobox-create --nvidia --no-entry -Y --image "ghcr.io/ashylily/${3}" --name "$3"
+        distrobox-create --nvidia --no-entry -Y --image "ghcr.io/kitten-lily/${3}" --name "$3"
     else
         printf "Unkown Choice..."
         Exiting

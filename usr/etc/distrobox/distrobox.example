@@ -1,5 +1,5 @@
 [ubuntu]
-image=ghcr.io/ashylily/ubuntu-toolbox:latest
+image=ghcr.io/kitten-lily/ubuntu-toolbox:latest
 #additional_packages=" " 
 #export=" "
 init=false
@@ -15,7 +15,7 @@ replace=true
 # See https://distrobox.privatedns.org/usage/distrobox-assemble/
 
 #[fedora]
-#image=ghcr.io/ashylily/fedora-toolbox:latest
+#image=ghcr.io/kitten-lily/fedora-toolbox:latest
 #additional_packages="ansible lynx chromium neofetch cmus"
 #export="app chromium"
 #init=false
@@ -25,7 +25,7 @@ replace=true
 #replace=true
 
 #[wolfi]
-#image=ghcr.io/ashylily/wolfi-toolbox:latest
+#image=ghcr.io/kitten-lily/wolfi-toolbox:latest
 #init=false
 #nvidia=true
 #pull=true
