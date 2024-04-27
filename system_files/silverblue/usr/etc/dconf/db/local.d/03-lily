@@ -1,0 +1,53 @@
+[org/gnome/shell] 
+enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'logomenu@aryan_k', 'tailscale@joaophi.github.com']
+
+[org/gnome/desktop/interface]
+color-scheme="prefer-dark"
+cursor-theme="Adwaita"
+icon-theme="Yaru-magenta-dark"
+gtk-theme="adw-gtk3-dark"
+font-name="Inter Variable 12"
+document-font-name="Inter Variable 12"
+monospace-font-name="FantasqueSansM Nerd Font 15"
+
+[org/gnome/desktop/sound]
+theme-name="freedesktop"
+
+[org/gnome/desktop/wm/preferences]
+titlebar-font="Inter Variable Bold 12"
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+binding='<Shift><Control><Space>'
+command='1password --quick-access'
+name='1Password Quick Access'
+
+[org/gnome/Ptyxis/Profiles/2871e8027773ae74d6c87a5f659bbc74]
+palette='Catppuccin Macchiato'
+
+[org/gnome/shell/extensions/openbar]
+bartype='Trilands'
+autofg-bar=false
+font='Inter Variable 12'
+iscolor=['0.9607843160629272', '0.7411764860153198', '0.9019607901573181']
+bcolor=['0.12156863510608673', '0.11372549086809158', '0.18039216101169586']
+bwidth=1
+hcolor=['0.2509803771972656', '0.239215686917305', '0.32156863808631897']
+halpha=0.3
+mbgcolor=['0.11764705926179886', '0.125490203499794', '0.1882352977991104']
+mbgalpha=1
+mhcolor=['0.2509803771972656', '0.239215686917305', '0.32156863808631897']
+mhalpha=0.3
+mbcolor=['0.0941176488995552', '0.09803921729326248', '0.14901961386203766']
+mbalpha=1
+mfgcolor=['0.7921568751335144', '0.8274509906768799', '0.9607843160629272']
+autofg-menu=true
+mshcolor=['0.0941176488995552', '0.09803921729326248', '0.14901961386203766']
+mshalpha=0.15
+mscolor=['0.9607843160629272', '0.7411764860153198', '0.9019607901573181']
+msalpha=1
+
+[org/gnome/shell/extensions/HeadsetControl]
+headsetcontrol-executable='/usr/bin/headsetcontrol'
