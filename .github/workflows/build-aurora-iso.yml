@@ -6,6 +6,10 @@ on:
 jobs:
   build-40:
     name: Aurora 40
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     uses: ./.github/workflows/reusable-build-iso.yml
     secrets: inherit
     with:

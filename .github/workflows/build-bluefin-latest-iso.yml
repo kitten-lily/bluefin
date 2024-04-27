@@ -8,6 +8,10 @@ on:
 jobs:
   build-latest:
     name: Bluefin Latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     uses: ./.github/workflows/reusable-build-iso.yml
     secrets: inherit
     with:
