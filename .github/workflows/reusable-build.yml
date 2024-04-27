@@ -339,6 +339,10 @@ jobs:
 
   build_iso:
     name: iso
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     needs: [check]
     if: github.ref_name == 'testing' && inputs.fedora_version != '40'
     # Eventually would be nice for building images in PRs
