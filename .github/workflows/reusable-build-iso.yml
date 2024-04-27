@@ -113,7 +113,7 @@ jobs:
         shell: bash
         run: |
           set -ex
-          image="ghcr.io/ublue-os/${{ env.IMAGE_NAME }}:${{ steps.generate-tag.outputs.tag }}"
+          image="ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:${{ steps.generate-tag.outputs.tag }}"
           # Make temp space
           TEMP_FLATPAK_INSTALL_DIR=$(mktemp -d -p ${{ github.workspace }} flatpak.XXX)
           # Get list of refs from directory
@@ -145,7 +145,7 @@ jobs:
         with:
           arch: x86_64
           image_name: ${{ env.IMAGE_NAME }}
-          image_repo: ghcr.io/ublue-os
+          image_repo: ghcr.io/${{ github.repository_owner }}
           variant: ${{ env.VARIANT }}
           version: ${{ matrix.fedora_version }}
           image_tag: ${{ steps.generate-tag.outputs.tag }}
