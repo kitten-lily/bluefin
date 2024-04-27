@@ -1,0 +1,10 @@
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['com.github.tchx84.Flatseal.desktop', 'io.github.flattool.Warehouse.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.gnome.tweaks.desktop', 'firewall-config.desktop', 'ca.desrt.dconf-editor.desktop', 'org.fedoraproject.MediaWriter.desktop', 'solaar.desktop', 'io.github.pwr_solaar.solaar.desktop', 'org.gnome.Connections.desktop', 'io.missioncenter.MissionCenter.desktop', 'com.github.GradienceTeam.Gradience.desktop', 'org.gnome.Terminal.desktop']
+[org/gnome/desktop/app-folders/folders/Games]
+apps=['com.usebottles.bottles.desktop']
+
+[org/gnome/desktop/app-folders/folders/Distrobox]
+apps=['io.github.dvlv.boxbuddyrs.desktop']
+
+[org/gnome/desktop/app-folders/folders/Development]
+categories=['Development']
