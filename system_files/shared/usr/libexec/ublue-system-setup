@@ -19,6 +19,9 @@ KNOWN_IMAGE_NAME_FILE="/etc/ublue/image_name"
 KNOWN_IMAGE_FLAVOR_FILE="/etc/ublue/image_flavor"
 [[ -f "$KNOWN_IMAGE_FLAVOR_FILE" ]] && KNOWN_IMAGE_FLAVOR=$(cat $KNOWN_IMAGE_FLAVOR_FILE)
 
+# Make some electron flatpak apps run in wayland mode.
+/usr/libexec/fix-electron-wayland.sh
+
 # Run script if updated
 if [[ -f "$HWS_VER_FILE" && "$HWS_VER" = "$HWS_VER_RAN" ]]; then
   if [[ -f "$KNOWN_IMAGE_NAME_FILE" && -f "$KNOWN_IMAGE_FLAVOR_FILE" ]]; then
