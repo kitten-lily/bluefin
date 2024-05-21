@@ -15,6 +15,7 @@ set -ouex pipefail
 . /tmp/build/systemd.sh
 . /tmp/build/bluefin-changes.sh
 . /tmp/build/aurora-changes.sh
+authselect enable-feature with-pam-u2f
 . /tmp/build/branding.sh
 . /tmp/build/initramfs.sh
 . /tmp/build/cleanup.sh
