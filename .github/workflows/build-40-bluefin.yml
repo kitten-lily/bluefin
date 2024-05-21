@@ -8,6 +8,7 @@ on:
     paths-ignore:
       - '**.md'
       - 'system_files/kinoite/**'
+      - 'system_files/cosmic/**'
   push:
     branches:
       - main

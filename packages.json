@@ -179,6 +179,9 @@
 				"gnome-shell-extension-tailscale-gnome-qs",
 				"nautilus-open-any-terminal"
 			],
+			"base": [
+				"cosmic-desktop"
+			],
 			"dx": []
 		},
 		"exclude": {

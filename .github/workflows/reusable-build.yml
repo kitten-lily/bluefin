@@ -7,7 +7,7 @@ on:
         required: true
         type: string
       brand_name:
-        description: "'aurora' or 'bluefin'"
+        description: "'aurora' or 'bluefin' or 'starlit'"
         required: true
         type: string
     outputs:
@@ -63,6 +63,8 @@ jobs:
               echo "BASE_IMAGE_NAME"="silverblue" >> $GITHUB_ENV
           elif [[ "${{ matrix.base_name }}" =~ "aurora" ]]; then
               echo "BASE_IMAGE_NAME"="kinoite" >> $GITHUB_ENV
+          elif [[ "${{ matrix.base_name }}" =~ "starlit" ]]; then
+              echo "BASE_IMAGE_NAME"="base" >> $GITHUB_ENV
           fi
           if [[ "${{ matrix.base_name }}" =~ "dx" ]]; then
               echo "TARGET_NAME"="dx" >> $GITHUB_ENV
@@ -83,7 +85,7 @@ jobs:
           containers: ${{ env.BASE_IMAGE_NAME}}-${{ matrix.image_flavor }}:${{ matrix.fedora_version }}
 
       - name: Verify Chainguard images
-        if: matrix.base_name != 'bluefin' && matrix.base_name != 'aurora'
+        if: matrix.base_name != 'bluefin' && matrix.base_name != 'aurora' && matrix.base_name != 'starlit'
         uses: EyeCantCU/cosign-action/verify@v0.2.2
         with:
           containers: dive, flux, helm, ko, minio, kubectl
