@@ -9,13 +9,13 @@ set -ouex pipefail
 . /tmp/build/nvidia.sh
 . /tmp/build/image-info.sh
 . /tmp/build/fetch-install.sh
+. /tmp/build/install-1password.sh
 . /tmp/build/brew.sh
 . /tmp/build/fetch-quadlets.sh
 . /tmp/build/font-install.sh
 . /tmp/build/systemd.sh
 . /tmp/build/bluefin-changes.sh
 . /tmp/build/aurora-changes.sh
-authselect enable-feature with-pam-u2f
 . /tmp/build/branding.sh
 . /tmp/build/initramfs.sh
 . /tmp/build/cleanup.sh
