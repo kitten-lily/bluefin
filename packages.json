@@ -24,6 +24,7 @@
 				"mesa-libGLU",
 				"nerd-fonts",
 				"playerctl",
+				"https://proton.me/download/mail/linux/ProtonMail-desktop-beta.rpm",
 				"printer-driver-brlaser",
 				"pulseaudio-utils",
 				"python3-pip",
