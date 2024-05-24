@@ -44,6 +44,7 @@
 				"zsh"
 			],
 			"silverblue": [
+				"cosmic-desktop",
 				"gnome-shell-extension-appindicator",
 				"gnome-shell-extension-blur-my-shell",
 				"gnome-shell-extension-caffeine",
