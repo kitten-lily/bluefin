@@ -57,6 +57,13 @@ if [[ ":Framework:" =~ ":$VEN_ID:" ]]; then
   fi
 fi
 
+
+# Install GNOME extensions
+pip install --upgrade gnome-extensions-cli
+gext install pano@elhan.io
+gext install weatheroclock@CleoMenezesJr.github.io
+gext install HeadsetControl@lauinger-clan.de
+
 # Handle privileged tasks
 pkexec /usr/libexec/ublue-privileged-user-setup
 
