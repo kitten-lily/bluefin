@@ -45,6 +45,7 @@
 				"zsh"
 			],
 			"silverblue": [
+				"cosmic-desktop",
 				"simple-scan",
 				"gnome-shell-extension-appindicator",
 				"gnome-shell-extension-blur-my-shell",
